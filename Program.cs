@@ -83,6 +83,16 @@ namespace Guestbooks
                         //Val 2 - Ta bort ett inlägg utifrån index
                         case "2":
 
+                            //Rensa konsollen, men visa inlägg som finns att radera
+                            Console.Clear();
+                            int ind = 1;
+                            foreach (GuestPost post in guestbook.GetPosts())
+                            {
+                                Console.WriteLine("[" + ind++ + "] " + post.Name + " har skrivit: ");
+                                Console.WriteLine(post.Post);
+                                Console.WriteLine();
+                            }
+
                             Console.Write("Ange vilket inlägg vill du radera: ");
                             string? indexAnswer = Console.ReadLine();
 
