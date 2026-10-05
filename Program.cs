@@ -1,4 +1,14 @@
 ﻿
+/*
+* Filnamn: Program.cs
+* Författare: Emma Heikkinen
+* Datum: 2026-09-22
+* Kurs: Programmering i C#.NET DT071G
+* 
+* Beskrivning:
+* En konsolappplikation i form av en gästbok där användaren kan
+lägga till och ta bort inlägg samt avsluta applikationen.
+*/
 
 namespace Guestbooks
 {
